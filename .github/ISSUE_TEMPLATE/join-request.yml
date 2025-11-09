@@ -1,0 +1,44 @@
+name: Join Request
+description: 📩 Request here to be invited as Community Member
+title: Join Request for <username>
+labels: [invite-request]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Hi dev! 👋
+        After creating an issue here you'll be invited to the Github Org as soon as possible.
+        Feel free to fill the optional fields below to better know each other!
+  - type: textarea
+    id: found-us
+    attributes:
+      label: How did you know about this community?
+      placeholder: I read a post on Mastodon
+    validations:
+      required: true
+  - type: textarea
+    id: goals
+    attributes:
+      label: Why are you joining us?
+      placeholder: I want to get better in backend development
+    validations:
+      required: true
+  - type: dropdown
+    id: level
+    attributes:
+      label: What is your Web Development level?
+      description: Select your level of expertise as of now
+      options:
+        - Beginner
+        - Intermediate
+        - Advanced
+        - Expert
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for your interest in joining the Community! 
+        Keep in touch, this is my [Linktree](https://linktr.ee/domenicotenace)!
+        
+        See you soon! 👋
